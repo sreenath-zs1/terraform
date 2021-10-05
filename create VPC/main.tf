@@ -22,7 +22,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "vpc_1" {
-    cidr_block = var.vpc_cidr_block
+    cidr_block = "${var.vpc_cidr_block}"
     instance_tenancy = "default"
     
     tags = {
