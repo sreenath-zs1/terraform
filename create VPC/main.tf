@@ -1,11 +1,11 @@
 terraform {
-   backend "remote" {
-    organization = "zelarsoft"
+  #  backend "remote" {
+  #   organization = "zelarsoft"
 
-    workspaces {
-      name = "VPC-Example"
-    }
-  }
+  #   workspaces {
+  #     name = "VPC-Example"
+  #   }
+  # }
    required_providers {
     aws = {
       source  = "hashicorp/aws"
