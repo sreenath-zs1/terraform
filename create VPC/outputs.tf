@@ -5,5 +5,5 @@ output "VPC_id" {
 
 output "VPC_Name" {
   description = "ID of the VPC"
-  value       = aws_vpc.vpc_1.Name
+  value       = var.name
 }
