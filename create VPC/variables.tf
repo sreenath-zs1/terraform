@@ -3,6 +3,7 @@ variable "vpc_cidr_block" {
   type        = string
   default     = "10.0.0.0/16"
 }
+
 variable "name" {
   description = "Name to be used on all the resources as identifier"
   type        = string
@@ -43,4 +44,24 @@ variable "vpc_private_subnet_3" {
   description = "The CIDR block for the private subnet 3"
   type        = string
   default     = "10.0.3.0/24"
+}
+
+
+
+variable "instance_tenancy" {
+  description = "A tenancy option for instances launched into the VPC"
+  type        = string
+  default     = "default"
+}
+
+variable "enable_dns_hostnames" {
+  description = "Should be true to enable DNS hostnames in the VPC"
+  type        = bool
+  default     = true
+}
+
+variable "enable_dns_support" {
+  description = "Should be true to enable DNS support in the VPC"
+  type        = bool
+  default     = true
 }
