@@ -23,15 +23,15 @@ resource "aws_route_table" "route_private" {
 }
 
 resource "aws_route_table_association" "private_1" {
-  subnet_id      = "${aws_subnet.private_1.id}"
+  subnet_id      = "${aws_subnet.private-1.id}"
   route_table_id = "${aws_route_table.route_private.id}"
 }
 
 resource "aws_route_table_association" "private_2" {
-  subnet_id      = "${aws_subnet.private_2.id}"
+  subnet_id      = "${aws_subnet.private-2.id}"
   route_table_id = "${aws_route_table.route_private.id}"
 }
 resource "aws_route_table_association" "private_3" {
-  subnet_id      = "${aws_subnet.private_3.id}"
+  subnet_id      = "${aws_subnet.private-3.id}"
   route_table_id = "${aws_route_table.route_private.id}"
 }
