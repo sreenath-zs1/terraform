@@ -1,5 +1,12 @@
 terraform {
-   required_providers {
+  backend "remote" {
+    organization = "zelarsoft"
+
+    workspaces {
+      name = "Example1"
+    }
+  }
+  required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 3.27"
@@ -19,6 +26,12 @@ resource "aws_instance" "app_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = var.instance_name
+    Name = "Terraform cloud state remote"
   }
 }
+
+
+
+#Terraform login
+#terraform cloud api token
+#In organization add variable like accesskey and secret key
