@@ -26,3 +26,21 @@ variable "vpc_public_subnet_3" {
   type        = string
   default     = "10.0.103.0/24"
 }
+
+variable "vpc_private_subnet_1" {
+  description = "The CIDR block for the private subnet 1"
+  type        = string
+  default     = "10.0.1.0/24"
+}
+
+
+variable "vpc_private_subnet_2" {
+  description = "The CIDR block for the private subnet 2"
+  type        = string
+  default     = "10.0.2.0/24"
+}
+variable "vpc_private_subnet_3" {
+  description = "The CIDR block for the private subnet 3"
+  type        = string
+  default     = "10.0.3.0/24"
+}
