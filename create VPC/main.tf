@@ -3,7 +3,7 @@ terraform {
     organization = "zelarsoft"
 
     workspaces {
-      name = "VPC Terraform"
+      name = "VPCTerraform"
     }
   }
    required_providers {
